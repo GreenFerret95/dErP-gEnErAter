@@ -6,13 +6,11 @@ class Generate:
         message = sys.argv[1].lower()
         count = 0
         new_message = []
+        
         for char in message:
-            if (count % 2) != 0:
-                new_message.append(char.upper())
-                print(char.upper())
-            else: 
-                new_message.append(char)
-                print(char)
+            add = None
+            add = char.upper() if (count % 2) != 0 else char
+            new_message.append(add)
             count+=1
         s = ""
         new_message = s.join(new_message)

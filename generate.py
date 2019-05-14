@@ -8,7 +8,6 @@ class Generate:
         new_message = []
         
         for char in message:
-            add = None
             add = char.upper() if (count % 2) != 0 else char
             new_message.append(add)
             count+=1
